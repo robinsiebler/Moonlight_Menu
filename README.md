@@ -1,10 +1,11 @@
 A command-line menu to display and launch the games available to
 moonlight.
 
-Usage:
+**Usage:**
+
 	mmenu.py [-c COLUMNS] [-r ROWS]
 
-Options:
+**Options:**
 
     -h --help       Show this screen.
     -c COLUMNS      Number of columns to display
