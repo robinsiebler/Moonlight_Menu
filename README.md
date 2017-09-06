@@ -10,3 +10,4 @@ moonlight.
     -h --help       Show this screen.
     -c COLUMNS      Number of columns to display
     -r ROWS         Number of rows to display
+
