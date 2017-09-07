@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
-"""Moonlight Menu
+"""
+Moonlight Menu
 
 Usage:
 	mmenu.py [-c COLUMNS] [-r ROWS]
