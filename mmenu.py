@@ -30,11 +30,11 @@ index_expr = (OneOrMore(Word(nums)))
 def chunk(it, size):
 	"""return the given iterable object in checks of the specified size.
 
-	@:param obj it: An iterable object
-	@:param int size: The maximum size of each chunk
+	:param obj it: An iterable object
+	:param int size: The maximum size of each chunk
 
-	@:return:  A list of lists
-	@:rtype: list
+	:return:  A list of lists
+	:rtype: list
 	"""
 	it = iter(it)
 	return iter(lambda: tuple(islice(it, size)), ())
@@ -43,17 +43,17 @@ def chunk(it, size):
 def get_choice(list_of_games, num_games, num_pages=None, current_page=None):
 	"""get the choice from the user.
 
-	@:param list list_of_games:
+	:param list list_of_games:
 		The list of games to choose from
-	@:param int num_games:
+	:param int num_games:
 		The number of games to choose from
-	@:param int num_pages:
+	:param int num_pages:
 		The number of pages (of choices) to display
-	@:param int current_page:
+	:param int current_page:
 		The currently displayed page number
 
-	@:returns: Either an int representing the index of the chosen game or an alpha reprsenting a program choice
-	@:rtype: obj
+	:returns: Either an int representing the index of the chosen game or an alpha representing a program choice
+	:rtype: obj
 	"""
 	if current_page == 0:
 		text = Fore.WHITE + 'Options: Display (' + Fore.GREEN + 'N' + Fore.WHITE + ')ext page, (' + Fore.MAGENTA + \
@@ -98,14 +98,14 @@ def list_columns(obj, cols=2, columnwise=True, gap=4):
 
 	Parameters
 	----------
-	@:param list obj:
+	:param list obj:
 		The list to be printed.
-	@:param int cols:
+	:param int cols:
 		The number of columns in which the list should be printed.
-	@:param bool columnwise: default=True
+	:param bool columnwise: default=True
 		If True, the items in the list will be printed column-wise.
 		If False the items in the list will be printed row-wise.
-	@:param int gap:
+	:param int gap:
 		The number of spaces that should separate the longest column
 		item/s from the next column. This is the effective spacing
 		between columns based on the maximum len() of the list items.
